@@ -38,7 +38,7 @@ amqp.connect('amqp://localhost', '', (err, conn) =>{
                             }
                             if(ok) {
                                 console.log("ready to publish messages");
-                                fs.readFile('/Users/AndyWaldman/Downloads/uber-raw-data-may14.csv', (err, data) => {
+                                fs.readFile('uber-raw-data-may14.csv', (err, data) => {
                                     if (err) process.exit(1);
                                     let count = 1;
                                     let fileContent = data.toString();
